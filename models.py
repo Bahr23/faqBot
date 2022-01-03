@@ -19,4 +19,9 @@ class Question(db.Entity):
     answer = Required(str)
 
 
+class Settings(db.Entity):
+    key = Required(str)
+    value = Required(str)
+
+
 db.generate_mapping(create_tables=True)
